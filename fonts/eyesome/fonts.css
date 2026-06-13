@@ -1,0 +1,17 @@
+@font-face {
+    font-family: 'Eyesome Script';
+    src: url('eyesome-script.woff2') format('woff2'),
+         url('eyesome-script.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'Eyesome Regular';
+    src: url('eyesome-regular.woff2') format('woff2'),
+         url('eyesome-regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
