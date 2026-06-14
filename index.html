@@ -714,7 +714,7 @@
                       <div
                         class="container-mobile"
                         style="
-                          background-image: url(./themes/classic-blue/bg.webp);
+                          background-image: url(akad.jpeg);
                         "
                       >
                         <div class="frame">
@@ -899,7 +899,7 @@
                       <div
                         class="container-mobile"
                         style="
-                          background-image: url(./themes/classic-blue/bg.webp);
+                          background-image: url(resepsi.jpeg);
                         "
                       >
                         <div class="frame">
@@ -1120,176 +1120,390 @@
                           />
                         </div>
                         <div
-                          class="d-flex justify-content-center align-items-start"
                           style="
                             height: 100%;
-                            padding-top: 60px;
-                            padding-bottom: 60px;
+                            width: 100%;
+                            position: relative;
                           "
                         >
+                          <!-- Title overlay -->
+                          <div
+                            class="text-center animate__animated animate__fadeInDown animate__slower"
+                            style="
+                              position: absolute;
+                              top: 24px;
+                              left: 0;
+                              width: 100%;
+                              z-index: 10;
+                              pointer-events: none;
+                            "
+                          >
+                            <div
+                              class="color-accent editable font-latin"
+                              style="
+                                font-size: 28.8px;
+                                line-height: 2;
+                                text-shadow: 0 2px 4px rgba(255, 255, 255, 0.8);
+                                background: rgba(255, 255, 255, 0.4);
+                                display: inline-block;
+                                padding: 2px 16px;
+                                border-radius: 20px;
+                              "
+                            >
+                              Our Memories
+                            </div>
+                          </div>
+
+                          <style>
+                            #galleryScrollContainer {
+                              -ms-overflow-style: none;  /* IE and Edge */
+                              scrollbar-width: none;  /* Firefox */
+                            }
+                            #galleryScrollContainer::-webkit-scrollbar {
+                              display: none; /* Chrome, Safari and Opera */
+                            }
+                            @keyframes bounceIndicator {
+                              0%, 20%, 50%, 80%, 100% {
+                                transform: translate(-50%, 0);
+                              }
+                              40% {
+                                transform: translate(-50%, -6px);
+                              }
+                              60% {
+                                transform: translate(-50%, -3px);
+                              }
+                            }
+                          </style>
+
                           <div
                             id="galleryScrollContainer"
                             style="
                               width: 100%;
                               height: 100%;
-                              overflow-y: auto;
+                              overflow-y: scroll;
+                              scroll-snap-type: y mandatory;
                               -webkit-overflow-scrolling: touch;
-                              padding: 0 16px;
+                              scroll-behavior: smooth;
                             "
                           >
-                            <div
-                              class="text-center mb-4 animate__animated animate__fadeInDown animate__slower"
-                            >
+                            <div class="gallery-snap-item" style="width: 100%; height: 100%; scroll-snap-align: start; scroll-snap-stop: always; flex-shrink: 0; position: relative;">
+                              <img src="1.jpeg" class="lightbox" style="width: 100%; height: 100%; object-fit: cover; cursor: pointer;" alt="1.jpeg" />
+                              <!-- Scroll down indicator -->
                               <div
-                                class="color-accent editable font-latin"
-                                style="font-size: 28.8px; line-height: 2"
+                                onclick="event.stopPropagation(); document.getElementById('galleryScrollContainer').scrollBy({ top: this.closest('#galleryScrollContainer').clientHeight, behavior: 'smooth' });"
+                                style="
+                                  position: absolute;
+                                  bottom: 24px;
+                                  left: 50%;
+                                  transform: translateX(-50%);
+                                  z-index: 10;
+                                  cursor: pointer;
+                                  color: rgba(255, 255, 255, 0.7);
+                                  animation: bounceIndicator 2s infinite;
+                                  background: rgba(0, 0, 0, 0.3);
+                                  border-radius: 50%;
+                                  width: 36px;
+                                  height: 36px;
+                                  display: flex;
+                                  align-items: center;
+                                  justify-content: center;
+                                  backdrop-filter: blur(2px);
+                                  border: 1px solid rgba(255, 255, 255, 0.2);
+                                "
                               >
-                                Our Memories
+                                <svg
+                                  xmlns="http://www.w3.org/2000/svg"
+                                  width="20"
+                                  height="20"
+                                  fill="none"
+                                  viewbox="0 0 24 24"
+                                  stroke="currentColor"
+                                  stroke-width="2.5"
+                                  stroke-linecap="round"
+                                  stroke-linejoin="round"
+                                >
+                                  <path d="m6 9 6 6 6-6"></path>
+                                </svg>
                               </div>
                             </div>
-                            <div
-                              class="image-editable d-flex flex-wrap"
-                              style="margin: -4px"
-                            >
+                            <div class="gallery-snap-item" style="width: 100%; height: 100%; scroll-snap-align: start; scroll-snap-stop: always; flex-shrink: 0; position: relative;">
+                              <img src="2.jpeg" class="lightbox" style="width: 100%; height: 100%; object-fit: cover; cursor: pointer;" alt="2.jpeg" />
+                              <!-- Scroll down indicator -->
                               <div
-                                class="animate__animated animate__zoomIn animate__slower"
+                                onclick="event.stopPropagation(); document.getElementById('galleryScrollContainer').scrollBy({ top: this.closest('#galleryScrollContainer').clientHeight, behavior: 'smooth' });"
                                 style="
-                                  width: 50%;
-                                  overflow: hidden;
-                                  padding: 4px;
+                                  position: absolute;
+                                  bottom: 24px;
+                                  left: 50%;
+                                  transform: translateX(-50%);
+                                  z-index: 10;
+                                  cursor: pointer;
+                                  color: rgba(255, 255, 255, 0.7);
+                                  animation: bounceIndicator 2s infinite;
+                                  background: rgba(0, 0, 0, 0.3);
+                                  border-radius: 50%;
+                                  width: 36px;
+                                  height: 36px;
+                                  display: flex;
+                                  align-items: center;
+                                  justify-content: center;
+                                  backdrop-filter: blur(2px);
+                                  border: 1px solid rgba(255, 255, 255, 0.2);
                                 "
                               >
-                                <div
-                                  style="
-                                    overflow: hidden;
-                                    width: 100%;
-                                    height: 220px;
-                                    border-radius: 8px;
-                                  "
+                                <svg
+                                  xmlns="http://www.w3.org/2000/svg"
+                                  width="20"
+                                  height="20"
+                                  fill="none"
+                                  viewbox="0 0 24 24"
+                                  stroke="currentColor"
+                                  stroke-width="2.5"
+                                  stroke-linecap="round"
+                                  stroke-linejoin="round"
                                 >
-                                  <img
-                                    src="1.jpeg"
-                                    class="lightbox"
-                                    style="
-                                      width: 100%;
-                                      height: 100%;
-                                      object-fit: cover;
-                                    "
-                                    alt="1.jpeg"
-                                  />
-                                </div>
+                                  <path d="m6 9 6 6 6-6"></path>
+                                </svg>
                               </div>
+                            </div>
+                            <div class="gallery-snap-item" style="width: 100%; height: 100%; scroll-snap-align: start; scroll-snap-stop: always; flex-shrink: 0; position: relative;">
+                              <img src="3.jpeg" class="lightbox" style="width: 100%; height: 100%; object-fit: cover; cursor: pointer;" alt="3.jpeg" />
+                              <!-- Scroll down indicator -->
                               <div
-                                class="animate__animated animate__zoomIn animate__slower"
+                                onclick="event.stopPropagation(); document.getElementById('galleryScrollContainer').scrollBy({ top: this.closest('#galleryScrollContainer').clientHeight, behavior: 'smooth' });"
                                 style="
-                                  width: 50%;
-                                  overflow: hidden;
-                                  padding: 4px;
+                                  position: absolute;
+                                  bottom: 24px;
+                                  left: 50%;
+                                  transform: translateX(-50%);
+                                  z-index: 10;
+                                  cursor: pointer;
+                                  color: rgba(255, 255, 255, 0.7);
+                                  animation: bounceIndicator 2s infinite;
+                                  background: rgba(0, 0, 0, 0.3);
+                                  border-radius: 50%;
+                                  width: 36px;
+                                  height: 36px;
+                                  display: flex;
+                                  align-items: center;
+                                  justify-content: center;
+                                  backdrop-filter: blur(2px);
+                                  border: 1px solid rgba(255, 255, 255, 0.2);
                                 "
                               >
-                                <div
-                                  style="
-                                    overflow: hidden;
-                                    width: 100%;
-                                    height: 220px;
-                                    border-radius: 8px;
-                                  "
+                                <svg
+                                  xmlns="http://www.w3.org/2000/svg"
+                                  width="20"
+                                  height="20"
+                                  fill="none"
+                                  viewbox="0 0 24 24"
+                                  stroke="currentColor"
+                                  stroke-width="2.5"
+                                  stroke-linecap="round"
+                                  stroke-linejoin="round"
                                 >
-                                  <img
-                                    src="2.jpeg"
-                                    class="lightbox"
-                                    style="
-                                      width: 100%;
-                                      height: 100%;
-                                      object-fit: cover;
-                                    "
-                                    alt="2.jpeg"
-                                  />
-                                </div>
+                                  <path d="m6 9 6 6 6-6"></path>
+                                </svg>
                               </div>
+                            </div>
+                            <div class="gallery-snap-item" style="width: 100%; height: 100%; scroll-snap-align: start; scroll-snap-stop: always; flex-shrink: 0; position: relative;">
+                              <img src="4.jpeg" class="lightbox" style="width: 100%; height: 100%; object-fit: cover; cursor: pointer;" alt="4.jpeg" />
+                              <!-- Scroll down indicator -->
                               <div
-                                class="animate__animated animate__zoomIn animate__slower"
+                                onclick="event.stopPropagation(); document.getElementById('galleryScrollContainer').scrollBy({ top: this.closest('#galleryScrollContainer').clientHeight, behavior: 'smooth' });"
                                 style="
-                                  width: 50%;
-                                  overflow: hidden;
-                                  padding: 4px;
+                                  position: absolute;
+                                  bottom: 24px;
+                                  left: 50%;
+                                  transform: translateX(-50%);
+                                  z-index: 10;
+                                  cursor: pointer;
+                                  color: rgba(255, 255, 255, 0.7);
+                                  animation: bounceIndicator 2s infinite;
+                                  background: rgba(0, 0, 0, 0.3);
+                                  border-radius: 50%;
+                                  width: 36px;
+                                  height: 36px;
+                                  display: flex;
+                                  align-items: center;
+                                  justify-content: center;
+                                  backdrop-filter: blur(2px);
+                                  border: 1px solid rgba(255, 255, 255, 0.2);
                                 "
                               >
-                                <div
-                                  style="
-                                    overflow: hidden;
-                                    width: 100%;
-                                    height: 220px;
-                                    border-radius: 8px;
-                                  "
+                                <svg
+                                  xmlns="http://www.w3.org/2000/svg"
+                                  width="20"
+                                  height="20"
+                                  fill="none"
+                                  viewbox="0 0 24 24"
+                                  stroke="currentColor"
+                                  stroke-width="2.5"
+                                  stroke-linecap="round"
+                                  stroke-linejoin="round"
                                 >
-                                  <img
-                                    src="3.jpeg"
-                                    class="lightbox"
-                                    style="
-                                      width: 100%;
-                                      height: 100%;
-                                      object-fit: cover;
-                                    "
-                                    alt="3.jpeg"
-                                  />
-                                </div>
+                                  <path d="m6 9 6 6 6-6"></path>
+                                </svg>
                               </div>
+                            </div>
+                            <div class="gallery-snap-item" style="width: 100%; height: 100%; scroll-snap-align: start; scroll-snap-stop: always; flex-shrink: 0; position: relative;">
+                              <img src="5.jpeg" class="lightbox" style="width: 100%; height: 100%; object-fit: cover; cursor: pointer;" alt="5.jpeg" />
+                              <!-- Scroll down indicator -->
                               <div
-                                class="animate__animated animate__zoomIn animate__slower"
+                                onclick="event.stopPropagation(); document.getElementById('galleryScrollContainer').scrollBy({ top: this.closest('#galleryScrollContainer').clientHeight, behavior: 'smooth' });"
                                 style="
-                                  width: 50%;
-                                  overflow: hidden;
-                                  padding: 4px;
+                                  position: absolute;
+                                  bottom: 24px;
+                                  left: 50%;
+                                  transform: translateX(-50%);
+                                  z-index: 10;
+                                  cursor: pointer;
+                                  color: rgba(255, 255, 255, 0.7);
+                                  animation: bounceIndicator 2s infinite;
+                                  background: rgba(0, 0, 0, 0.3);
+                                  border-radius: 50%;
+                                  width: 36px;
+                                  height: 36px;
+                                  display: flex;
+                                  align-items: center;
+                                  justify-content: center;
+                                  backdrop-filter: blur(2px);
+                                  border: 1px solid rgba(255, 255, 255, 0.2);
                                 "
                               >
-                                <div
-                                  style="
-                                    overflow: hidden;
-                                    width: 100%;
-                                    height: 220px;
-                                    border-radius: 8px;
-                                  "
+                                <svg
+                                  xmlns="http://www.w3.org/2000/svg"
+                                  width="20"
+                                  height="20"
+                                  fill="none"
+                                  viewbox="0 0 24 24"
+                                  stroke="currentColor"
+                                  stroke-width="2.5"
+                                  stroke-linecap="round"
+                                  stroke-linejoin="round"
                                 >
-                                  <img
-                                    src="4.jpeg"
-                                    class="lightbox"
-                                    style="
-                                      width: 100%;
-                                      height: 100%;
-                                      object-fit: cover;
-                                    "
-                                    alt="4.jpeg"
-                                  />
-                                </div>
+                                  <path d="m6 9 6 6 6-6"></path>
+                                </svg>
                               </div>
+                            </div>
+                            <div class="gallery-snap-item" style="width: 100%; height: 100%; scroll-snap-align: start; scroll-snap-stop: always; flex-shrink: 0; position: relative;">
+                              <img src="6.jpeg" class="lightbox" style="width: 100%; height: 100%; object-fit: cover; cursor: pointer;" alt="6.jpeg" />
+                              <!-- Scroll down indicator -->
                               <div
-                                class="animate__animated animate__zoomIn animate__slower"
+                                onclick="event.stopPropagation(); document.getElementById('galleryScrollContainer').scrollBy({ top: this.closest('#galleryScrollContainer').clientHeight, behavior: 'smooth' });"
                                 style="
-                                  width: 50%;
-                                  overflow: hidden;
-                                  padding: 4px;
+                                  position: absolute;
+                                  bottom: 24px;
+                                  left: 50%;
+                                  transform: translateX(-50%);
+                                  z-index: 10;
+                                  cursor: pointer;
+                                  color: rgba(255, 255, 255, 0.7);
+                                  animation: bounceIndicator 2s infinite;
+                                  background: rgba(0, 0, 0, 0.3);
+                                  border-radius: 50%;
+                                  width: 36px;
+                                  height: 36px;
+                                  display: flex;
+                                  align-items: center;
+                                  justify-content: center;
+                                  backdrop-filter: blur(2px);
+                                  border: 1px solid rgba(255, 255, 255, 0.2);
                                 "
                               >
-                                <div
-                                  style="
-                                    overflow: hidden;
-                                    width: 100%;
-                                    height: 220px;
-                                    border-radius: 8px;
-                                  "
+                                <svg
+                                  xmlns="http://www.w3.org/2000/svg"
+                                  width="20"
+                                  height="20"
+                                  fill="none"
+                                  viewbox="0 0 24 24"
+                                  stroke="currentColor"
+                                  stroke-width="2.5"
+                                  stroke-linecap="round"
+                                  stroke-linejoin="round"
                                 >
-                                  <img
-                                    src="5.jpeg"
-                                    class="lightbox"
-                                    style="
-                                      width: 100%;
-                                      height: 100%;
-                                      object-fit: cover;
-                                    "
-                                    alt="5.jpeg"
-                                  />
-                                </div>
+                                  <path d="m6 9 6 6 6-6"></path>
+                                </svg>
+                              </div>
+                            </div>
+                            <div class="gallery-snap-item" style="width: 100%; height: 100%; scroll-snap-align: start; scroll-snap-stop: always; flex-shrink: 0; position: relative;">
+                              <img src="akad.jpeg" class="lightbox" style="width: 100%; height: 100%; object-fit: cover; cursor: pointer;" alt="akad.jpeg" />
+                              <!-- Scroll down indicator -->
+                              <div
+                                onclick="event.stopPropagation(); document.getElementById('galleryScrollContainer').scrollBy({ top: this.closest('#galleryScrollContainer').clientHeight, behavior: 'smooth' });"
+                                style="
+                                  position: absolute;
+                                  bottom: 24px;
+                                  left: 50%;
+                                  transform: translateX(-50%);
+                                  z-index: 10;
+                                  cursor: pointer;
+                                  color: rgba(255, 255, 255, 0.7);
+                                  animation: bounceIndicator 2s infinite;
+                                  background: rgba(0, 0, 0, 0.3);
+                                  border-radius: 50%;
+                                  width: 36px;
+                                  height: 36px;
+                                  display: flex;
+                                  align-items: center;
+                                  justify-content: center;
+                                  backdrop-filter: blur(2px);
+                                  border: 1px solid rgba(255, 255, 255, 0.2);
+                                "
+                              >
+                                <svg
+                                  xmlns="http://www.w3.org/2000/svg"
+                                  width="20"
+                                  height="20"
+                                  fill="none"
+                                  viewbox="0 0 24 24"
+                                  stroke="currentColor"
+                                  stroke-width="2.5"
+                                  stroke-linecap="round"
+                                  stroke-linejoin="round"
+                                >
+                                  <path d="m6 9 6 6 6-6"></path>
+                                </svg>
+                              </div>
+                            </div>
+                            <div class="gallery-snap-item" style="width: 100%; height: 100%; scroll-snap-align: start; scroll-snap-stop: always; flex-shrink: 0; position: relative;">
+                              <img src="resepsi.jpeg" class="lightbox" style="width: 100%; height: 100%; object-fit: cover; cursor: pointer;" alt="resepsi.jpeg" />
+                              <!-- Scroll down indicator (loop back to top) -->
+                              <div
+                                onclick="event.stopPropagation(); document.getElementById('galleryScrollContainer').scrollTo({ top: 0, behavior: 'smooth' });"
+                                style="
+                                  position: absolute;
+                                  bottom: 24px;
+                                  left: 50%;
+                                  transform: translateX(-50%);
+                                  z-index: 10;
+                                  cursor: pointer;
+                                  color: rgba(255, 255, 255, 0.7);
+                                  animation: bounceIndicator 2s infinite;
+                                  background: rgba(0, 0, 0, 0.3);
+                                  border-radius: 50%;
+                                  width: 36px;
+                                  height: 36px;
+                                  display: flex;
+                                  align-items: center;
+                                  justify-content: center;
+                                  backdrop-filter: blur(2px);
+                                  border: 1px solid rgba(255, 255, 255, 0.2);
+                                "
+                              >
+                                <svg
+                                  xmlns="http://www.w3.org/2000/svg"
+                                  width="20"
+                                  height="20"
+                                  fill="none"
+                                  viewbox="0 0 24 24"
+                                  stroke="currentColor"
+                                  stroke-width="2.5"
+                                  stroke-linecap="round"
+                                  stroke-linejoin="round"
+                                >
+                                  <path d="m6 9 6 6 6-6"></path>
+                                </svg>
                               </div>
                             </div>
                           </div>
