@@ -1,6 +1,12 @@
-<!doctype html>
+﻿<!doctype html>
 <html lang="id" class="notranslate" translate="no">
   <head>
+    <script>
+      window.onerror = function (message, source, lineno, colno, error) {
+        alert("JS Error: " + message + " at " + source + ":" + lineno);
+        return false;
+      };
+    </script>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta
@@ -12,16 +18,15 @@
     <meta name="google" content="notranslate" />
     <title>Rista 💙 Seski</title>
     <meta name="title" content="The Wedding of Rista 💙 Seski" />
-    <meta name="description" content="Hadiri Acara Pernikahan Rista & Seski. Pada Jumat, 26 Juni 2026" />
+    <meta
+      name="description"
+      content="Hadiri Acara Pernikahan Rista & Seski. Pada Jumat, 26 Juni 2026"
+    />
     <meta
       itemprop="image"
       content="https://i.pinimg.com/originals/10/54/36/105436935d97f3e5a95d5aefc2a29fca.jpg"
     />
-    <link
-      rel="icon"
-      type="image/png"
-      href="ICON KIRIMDIGI.png"
-    />
+    <link rel="icon" type="image/png" href="ICON KIRIMDIGI.png" />
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website" />
     <meta
@@ -29,7 +34,10 @@
       content="https://amfdigitalstudio-story.com/preview/classic-blue"
     />
     <meta property="og:title" content="The Wedding of Rista 💙 Seski" />
-    <meta property="og:description" content="Hadiri Acara Pernikahan Rista & Seski. Pada Jumat, 26 Juni 2026" />
+    <meta
+      property="og:description"
+      content="Hadiri Acara Pernikahan Rista & Seski. Pada Jumat, 26 Juni 2026"
+    />
     <meta
       property="og:image"
       content="https://i.pinimg.com/originals/10/54/36/105436935d97f3e5a95d5aefc2a29fca.jpg"
@@ -173,7 +181,7 @@
       <!-- music -->
       <audio id="music" loop="" autoplay="">
         <source
-          src="https://assets.satumomen.com/musics/fabio-asher-andi-rianto-since-i-found-you-official-music-video-464dl9vgscs.mp3"
+          src="Rizky Febian Feat. Mahalini - Bermuara [Official Lyric Video] (128).mp3"
         />
       </audio>
       <!-- end music -->
@@ -866,8 +874,7 @@
                                 style="font-size: 14.4px"
                               >
                                 Jorong Ujung Padang,<br />Kenagarian Tanjung,
-                                Kec. Koto VII, Kab. Sijunjung, Sumatra
-                                Barat
+                                Kec. Koto VII, Kab. Sijunjung, Sumatra Barat
                               </div>
                             </div>
                           </div>
@@ -1052,8 +1059,7 @@
                                 style="font-size: 14.4px"
                               >
                                 Jorong Ujung Padang,<br />Kenagarian Tanjung,
-                                Kec. Koto VII, Kab. Sijunjung, Sumatra
-                                Barat
+                                Kec. Koto VII, Kab. Sijunjung, Sumatra Barat
                               </div>
                             </div>
                           </div>
@@ -1100,10 +1106,23 @@
                           />
                         </div>
                         <div
-                          class="d-flex justify-content-center align-items-center"
-                          style="height: 100%"
+                          class="d-flex justify-content-center align-items-start"
+                          style="
+                            height: 100%;
+                            padding-top: 60px;
+                            padding-bottom: 60px;
+                          "
                         >
-                          <div style="width: 100%">
+                          <div
+                            id="galleryScrollContainer"
+                            style="
+                              width: 100%;
+                              height: 100%;
+                              overflow-y: auto;
+                              -webkit-overflow-scrolling: touch;
+                              padding: 0 16px;
+                            "
+                          >
                             <div
                               class="text-center mb-4 animate__animated animate__fadeInDown animate__slower"
                             >
@@ -1121,17 +1140,17 @@
                               <div
                                 class="animate__animated animate__zoomIn animate__slower"
                                 style="
-                                  width: 70%;
+                                  width: 50%;
                                   overflow: hidden;
                                   padding: 4px;
                                 "
                               >
                                 <div
-                                  class="light"
                                   style="
                                     overflow: hidden;
                                     width: 100%;
-                                    height: 144px;
+                                    height: 220px;
+                                    border-radius: 8px;
                                   "
                                 >
                                   <img
@@ -1149,7 +1168,7 @@
                               <div
                                 class="animate__animated animate__zoomIn animate__slower"
                                 style="
-                                  width: 30%;
+                                  width: 50%;
                                   overflow: hidden;
                                   padding: 4px;
                                 "
@@ -1158,7 +1177,8 @@
                                   style="
                                     overflow: hidden;
                                     width: 100%;
-                                    height: 144px;
+                                    height: 220px;
+                                    border-radius: 8px;
                                   "
                                 >
                                   <img
@@ -1176,7 +1196,7 @@
                               <div
                                 class="animate__animated animate__zoomIn animate__slower"
                                 style="
-                                  width: 30%;
+                                  width: 50%;
                                   overflow: hidden;
                                   padding: 4px;
                                 "
@@ -1185,7 +1205,8 @@
                                   style="
                                     overflow: hidden;
                                     width: 100%;
-                                    height: 144px;
+                                    height: 220px;
+                                    border-radius: 8px;
                                   "
                                 >
                                   <img
@@ -1203,7 +1224,7 @@
                               <div
                                 class="animate__animated animate__zoomIn animate__slower"
                                 style="
-                                  width: 70%;
+                                  width: 50%;
                                   overflow: hidden;
                                   padding: 4px;
                                 "
@@ -1212,7 +1233,8 @@
                                   style="
                                     overflow: hidden;
                                     width: 100%;
-                                    height: 144px;
+                                    height: 220px;
+                                    border-radius: 8px;
                                   "
                                 >
                                   <img
@@ -1230,7 +1252,7 @@
                               <div
                                 class="animate__animated animate__zoomIn animate__slower"
                                 style="
-                                  width: 100%;
+                                  width: 50%;
                                   overflow: hidden;
                                   padding: 4px;
                                 "
@@ -1239,7 +1261,8 @@
                                   style="
                                     overflow: hidden;
                                     width: 100%;
-                                    height: 144px;
+                                    height: 220px;
+                                    border-radius: 8px;
                                   "
                                 >
                                   <img
@@ -2093,14 +2116,157 @@
         <div class="modal-dialog modal-dialog-centered">
           <div class="modal-content p-4" style="height: 100%">
             <!-- rsvp form -->
-            <rsvp-component
-              :lang='{"invitation_code":"Kode Undangan","validate_code":"Validasi Kode Undangan","name":"Nama","group_name":"Nama Grup","phone":"No Hp \/ WhatsApp","attendance":"Kehadiran?","yes":"Hadir","no":"Tidak Hadir","guest":"Orang","guest_count":"Jumlah Tamu","comment":"Komentar atau Ucapan","send":"Kirim","update":"Kirim","captcha_placeholder":"Ketik Text"}'
-              :invitation_id="353432"
-              name="Nama Tamu"
-              code=""
-              :replace="false"
-              overlay="1"
-            ></rsvp-component>
+            <div
+              id="customRsvpFormContainer"
+              style="font-family: var(--font-base); font-size: 14px"
+            >
+              <h5
+                class="text-center mb-3"
+                style="color: var(--inv-accent); font-weight: bold"
+              >
+                RSVP & Ucapan
+              </h5>
+              <form id="customRsvpForm">
+                <div class="mb-3">
+                  <label
+                    class="form-label"
+                    style="font-weight: bold; color: var(--inv-accent)"
+                    >Nama Tamu</label
+                  >
+                  <input
+                    type="text"
+                    id="rsvpName"
+                    name="nama_tamu"
+                    class="form-control"
+                    required
+                    style="border-radius: 8px; font-size: 14px"
+                  />
+                </div>
+                <div class="mb-3">
+                  <label
+                    class="form-label"
+                    style="font-weight: bold; color: var(--inv-accent)"
+                    >Konfirmasi Kehadiran</label
+                  >
+                  <select
+                    id="rsvpAttendance"
+                    name="kehadiran"
+                    class="form-control"
+                    required
+                    style="border-radius: 8px; font-size: 14px"
+                  >
+                    <option value="Hadir">Hadir</option>
+                    <option value="Tidak Hadir">Tidak Hadir</option>
+                  </select>
+                </div>
+                <div class="mb-3" id="rsvpGuestCountGroup">
+                  <label
+                    class="form-label"
+                    style="font-weight: bold; color: var(--inv-accent)"
+                    >Jumlah Tamu</label
+                  >
+                  <select
+                    id="rsvpGuestCount"
+                    name="jumlah_tamu"
+                    class="form-control"
+                    style="border-radius: 8px; font-size: 14px"
+                  >
+                    <option value="1">1 Orang</option>
+                    <option value="2">2 Orang</option>
+                    <option value="3">3 Orang</option>
+                    <option value="4">4 Orang</option>
+                    <option value="5">5 Orang</option>
+                  </select>
+                </div>
+                <div class="mb-3">
+                  <label
+                    class="form-label"
+                    style="font-weight: bold; color: var(--inv-accent)"
+                    >Komentar atau Ucapan</label
+                  >
+                  <textarea
+                    id="rsvpComment"
+                    name="ucapan"
+                    class="form-control"
+                    rows="3"
+                    required
+                    style="border-radius: 8px; font-size: 14px"
+                    placeholder="Tulis ucapan & doa restu Anda..."
+                  ></textarea>
+                </div>
+                <button
+                  type="submit"
+                  class="btn w-100 rounded-pill py-2 mb-2"
+                  id="submitRsvpBtn"
+                  style="
+                    font-size: 14px;
+                    background-color: var(--inv-accent);
+                    border-color: var(--inv-accent);
+                    color: #fff;
+                    font-weight: bold;
+                  "
+                >
+                  Kirim Ucapan
+                </button>
+              </form>
+              <div class="mt-2">
+                <button
+                  type="button"
+                  class="btn w-100 rounded-pill py-2"
+                  id="showWishesBtn"
+                  style="
+                    font-size: 14px;
+                    background-color: var(--inv-accent);
+                    border-color: var(--inv-accent);
+                    color: #fff;
+                    font-weight: bold;
+                  "
+                >
+                  Tampilkan Ucapan
+                </button>
+                <button
+                  type="button"
+                  class="btn w-100 rounded-pill py-2"
+                  id="hideWishesBtn"
+                  style="
+                    font-size: 14px;
+                    background-color: var(--inv-accent);
+                    border-color: var(--inv-accent);
+                    color: #fff;
+                    font-weight: bold;
+                    display: none;
+                  "
+                >
+                  Sembunyikan
+                </button>
+              </div>
+              <div
+                id="wishesListContainer"
+                class="mt-4"
+                style="
+                  max-height: 200px;
+                  overflow-y: auto;
+                  display: none;
+                  border-top: 1px dashed rgba(0, 0, 0, 0.1);
+                  padding-top: 12px;
+                "
+              >
+                <h6
+                  style="
+                    color: var(--inv-accent);
+                    font-weight: bold;
+                    margin-bottom: 8px;
+                  "
+                >
+                  Daftar Ucapan:
+                </h6>
+                <div id="wishesList" class="d-flex flex-column gap-2">
+                  <div class="text-center text-muted" style="font-size: 12px">
+                    Memuat ucapan...
+                  </div>
+                </div>
+              </div>
+            </div>
             <!-- rsvp form -->
             <button
               onclick="closeModal(rsvpModal)"
@@ -2137,28 +2303,63 @@
         </div>
         <div
           class="text-center animate__animated animate__fadeInUp animate__slower animate__delay-1s mt-4"
-          style="font-size: 65%; font-family: var(--font-base);"
+          style="font-size: 65%; font-family: var(--font-base)"
         >
           <img
             src="ICON KIRIMDIGI.png"
             alt="KirimDigi Logo"
-            style="width: 40px; height: auto; margin-bottom: 8px;"
+            style="width: 40px; height: auto; margin-bottom: 8px"
           />
-          <div style="font-weight: bold; color: var(--inv-accent); margin-bottom: 4px;">
+          <div
+            style="
+              font-weight: bold;
+              color: var(--inv-accent);
+              margin-bottom: 4px;
+            "
+          >
             Made With 💙 KirimDigi
           </div>
-          <div style="opacity: 0.6; line-height: 1.4;">
+          <div style="opacity: 0.6; line-height: 1.4">
             Hubungi Kami Untuk :<br />
             Website, Aplikasi, Undangan Digital, &amp; CS AI
           </div>
-          <div style="display: flex; justify-content: center; gap: 16px; margin-top: 12px; font-size: 20px;">
-            <a href="https://instagram.com/kirimdigi" target="_blank" rel="noopener noreferrer" style="color: var(--inv-accent); transition: transform 0.2s;" onmouseover="this.style.transform='scale(1.2)'" onmouseout="this.style.transform='scale(1)'">
+          <div
+            style="
+              display: flex;
+              justify-content: center;
+              gap: 16px;
+              margin-top: 12px;
+              font-size: 20px;
+            "
+          >
+            <a
+              href="https://instagram.com/kirimdigi"
+              target="_blank"
+              rel="noopener noreferrer"
+              style="color: var(--inv-accent); transition: transform 0.2s"
+              onmouseover="this.style.transform = 'scale(1.2)'"
+              onmouseout="this.style.transform = 'scale(1)'"
+            >
               <i class="ph-fill ph-instagram-logo"></i>
             </a>
-            <a href="https://tiktok.com/@kirimdigi" target="_blank" rel="noopener noreferrer" style="color: var(--inv-accent); transition: transform 0.2s;" onmouseover="this.style.transform='scale(1.2)'" onmouseout="this.style.transform='scale(1)'">
+            <a
+              href="https://tiktok.com/@kirimdigi"
+              target="_blank"
+              rel="noopener noreferrer"
+              style="color: var(--inv-accent); transition: transform 0.2s"
+              onmouseover="this.style.transform = 'scale(1.2)'"
+              onmouseout="this.style.transform = 'scale(1)'"
+            >
               <i class="ph-fill ph-tiktok-logo"></i>
             </a>
-            <a href="https://wa.me/6281380989932" target="_blank" rel="noopener noreferrer" style="color: var(--inv-accent); transition: transform 0.2s;" onmouseover="this.style.transform='scale(1.2)'" onmouseout="this.style.transform='scale(1)'">
+            <a
+              href="https://wa.me/6281380989932"
+              target="_blank"
+              rel="noopener noreferrer"
+              style="color: var(--inv-accent); transition: transform 0.2s"
+              onmouseover="this.style.transform = 'scale(1.2)'"
+              onmouseout="this.style.transform = 'scale(1)'"
+            >
               <i class="ph-fill ph-whatsapp-logo"></i>
             </a>
           </div>
@@ -2303,45 +2504,330 @@
         }
 
         var guestName = getGuestName();
-        if (guestName) {
-          function updateGuestName() {
-            var sm = document.getElementById("satuMomen");
-            if (sm) {
-              sm.setAttribute("data-guest", guestName);
-              sm.dataset.guest = guestName;
-            }
 
-            var slot = document.getElementById("guestNameSlot");
-            if (slot && slot.textContent !== guestName) {
-              slot.textContent = guestName;
-            }
+        function updateGuestName() {
+          var sm = document.getElementById("satuMomen");
+          if (sm && guestName) {
+            sm.setAttribute("data-guest", guestName);
+            sm.dataset.guest = guestName;
+          }
 
-            var qrModal = document.getElementById("qrModal");
-            if (qrModal) {
-              var divs = qrModal.getElementsByTagName("div");
-              for (var i = 0; i < divs.length; i++) {
-                if (
-                  divs[i].textContent === "Nama Tamu" ||
-                  divs[i].textContent === "Tamu Undangan"
-                ) {
-                  divs[i].textContent = guestName;
-                }
-              }
-            }
+          var slot = document.getElementById("guestNameSlot");
+          if (slot && guestName && slot.textContent !== guestName) {
+            slot.textContent = guestName;
+          }
 
-            var rsvp = document.querySelector("rsvp-component");
-            if (rsvp) {
-              if (rsvp.getAttribute("name") !== guestName) {
-                rsvp.setAttribute("name", guestName);
+          var qrModal = document.getElementById("qrModal");
+          if (qrModal && guestName) {
+            var divs = qrModal.getElementsByTagName("div");
+            for (var i = 0; i < divs.length; i++) {
+              if (
+                divs[i].textContent === "Nama Tamu" ||
+                divs[i].textContent === "Tamu Undangan"
+              ) {
+                divs[i].textContent = guestName;
               }
             }
           }
 
+          var rsvpNameField = document.getElementById("rsvpName");
+          if (rsvpNameField && guestName && rsvpNameField.value !== guestName) {
+            rsvpNameField.value = guestName;
+          }
+        }
+
+        if (guestName) {
           updateGuestName();
           document.addEventListener("DOMContentLoaded", updateGuestName);
           window.addEventListener("load", updateGuestName);
           setInterval(updateGuestName, 200);
         }
+
+        // Google Apps Script Web App URL
+        var APPS_SCRIPT_URL =
+          "https://script.google.com/macros/s/AKfycbyAB9pD-cwRy5wchoUeMsX6Jnxmn_r4b6ItOT0ATKf24tCE0utKe1q_jnC7pyOXGYeA/exec";
+
+        // Set default value if guestName exists and name input is ready
+        var checkNameInputInterval = setInterval(function () {
+          var nameInput = document.getElementById("rsvpName");
+          if (nameInput) {
+            if (guestName && nameInput.value !== guestName) {
+              nameInput.value = guestName;
+            }
+            clearInterval(checkNameInputInterval);
+          }
+        }, 100);
+
+        // Toggle guest count based on attendance using change delegation
+        document.addEventListener("change", function (e) {
+          if (e.target && e.target.id === "rsvpAttendance") {
+            var guestCountGroup = document.getElementById(
+              "rsvpGuestCountGroup",
+            );
+            if (guestCountGroup) {
+              if (e.target.value === "Tidak Hadir") {
+                guestCountGroup.style.display = "none";
+              } else {
+                guestCountGroup.style.display = "block";
+              }
+            }
+          }
+        });
+
+        // Submit form using submit delegation
+        document.addEventListener("submit", function (e) {
+          if (e.target && e.target.id === "customRsvpForm") {
+            e.preventDefault();
+            if (APPS_SCRIPT_URL.includes("Placeholder")) {
+              alert(
+                "Harap atur URL Google Apps Script Anda terlebih dahulu di file HTML!",
+              );
+              return;
+            }
+
+            var submitBtn = document.getElementById("submitRsvpBtn");
+            var originalBtnText = submitBtn
+              ? submitBtn.textContent
+              : "Kirim Ucapan";
+            if (submitBtn) {
+              submitBtn.textContent = "Mengirim...";
+              submitBtn.disabled = true;
+            }
+
+            var nameInput = document.getElementById("rsvpName");
+            var commentInput = document.getElementById("rsvpComment");
+            var attendanceSelect = document.getElementById("rsvpAttendance");
+            var guestCountSelect = document.getElementById("rsvpGuestCount");
+
+            var nama = nameInput ? nameInput.value : "";
+            var ucapan = commentInput ? commentInput.value : "";
+            var kehadiran = attendanceSelect ? attendanceSelect.value : "Hadir";
+            var jumlah =
+              kehadiran === "Tidak Hadir"
+                ? 0
+                : guestCountSelect
+                  ? guestCountSelect.value
+                  : 1;
+
+            var url =
+              APPS_SCRIPT_URL +
+              "?action=add" +
+              "&nama_tamu=" +
+              encodeURIComponent(nama) +
+              "&ucapan=" +
+              encodeURIComponent(ucapan) +
+              "&kehadiran=" +
+              encodeURIComponent(kehadiran) +
+              "&jumlah_tamu=" +
+              encodeURIComponent(jumlah);
+
+            fetch(url)
+              .then(function (res) {
+                return res.json();
+              })
+              .then(function (result) {
+                if (submitBtn) {
+                  submitBtn.textContent = originalBtnText;
+                  submitBtn.disabled = false;
+                }
+                if (result.status === "success") {
+                  alert("Ucapan Anda berhasil dikirim!");
+                  var formEl = document.getElementById("customRsvpForm");
+                  if (formEl) formEl.reset();
+                  if (nameInput && guestName) {
+                    nameInput.value = guestName;
+                  }
+                  // Refresh list if visible
+                  var container = document.getElementById(
+                    "wishesListContainer",
+                  );
+                  if (container && container.style.display !== "none") {
+                    fetchWishes();
+                  }
+                } else {
+                  alert("Gagal mengirim ucapan: " + result.message);
+                }
+              })
+              .catch(function (err) {
+                if (submitBtn) {
+                  submitBtn.textContent = originalBtnText;
+                  submitBtn.disabled = false;
+                }
+                alert(
+                  "Terjadi kesalahan koneksi. Pastikan Web App URL Anda sudah dideploy dan benar.",
+                );
+              });
+          }
+        });
+
+        // Fetch wishes function
+        function fetchWishes() {
+          var list = document.getElementById("wishesList");
+          if (!list) return;
+
+          if (APPS_SCRIPT_URL.includes("Placeholder")) {
+            list.innerHTML =
+              '<div class="text-center text-danger" style="font-size: 12px;">Harap atur URL Google Apps Script di file HTML!</div>';
+            return;
+          }
+          list.innerHTML =
+            '<div class="text-center text-muted" style="font-size: 12px;">Memuat ucapan...</div>';
+          var url = APPS_SCRIPT_URL + "?action=read";
+          fetch(url)
+            .then(function (res) {
+              return res.json();
+            })
+            .then(function (result) {
+              if (result.status === "success") {
+                var wishes = result.data || [];
+                if (wishes.length === 0) {
+                  list.innerHTML =
+                    '<div class="text-center text-muted" style="font-size: 12px;">Belum ada ucapan.</div>';
+                  return;
+                }
+                var html = "";
+                wishes.forEach(function (item) {
+                  var dateStr = "";
+                  if (item.timestamp) {
+                    var d = new Date(item.timestamp);
+                    dateStr = d.toLocaleDateString("id-ID", {
+                      day: "numeric",
+                      month: "short",
+                      year: "numeric",
+                      hour: "2-digit",
+                      minute: "2-digit",
+                    });
+                  }
+                  var badgeColor =
+                    item.kehadiran === "Hadir" ? "#28a745" : "#dc3545";
+                  var badgeText =
+                    item.kehadiran === "Hadir" ? "Hadir" : "Tidak Hadir";
+                  if (item.kehadiran === "Hadir" && item.jumlah_tamu > 1) {
+                    badgeText += " (" + item.jumlah_tamu + " orang)";
+                  }
+
+                  html +=
+                    '<div style="background: rgba(0,0,0,0.03); border-radius: 8px; padding: 10px; font-size: 13px; margin-bottom: 8px; text-align: left;">' +
+                    '<div class="d-flex justify-content-between align-items-center mb-1">' +
+                    '<strong style="color: var(--inv-accent);">' +
+                    escapeHtml(item.nama_tamu) +
+                    "</strong>" +
+                    '<span style="background: ' +
+                    badgeColor +
+                    '; color: #fff; font-size: 10px; padding: 2px 6px; border-radius: 4px; font-weight: bold;">' +
+                    badgeText +
+                    "</span>" +
+                    "</div>" +
+                    '<div style="color: #333; margin-bottom: 4px; white-space: pre-wrap;">' +
+                    escapeHtml(item.ucapan) +
+                    "</div>" +
+                    '<small class="text-muted" style="font-size: 10px; display: block; text-align: right;">' +
+                    dateStr +
+                    "</small>" +
+                    "</div>";
+                });
+                list.innerHTML = html;
+              } else {
+                list.innerHTML =
+                  '<div class="text-center text-danger" style="font-size: 12px;">Gagal memuat ucapan: ' +
+                  result.message +
+                  "</div>";
+              }
+            })
+            .catch(function () {
+              list.innerHTML =
+                '<div class="text-center text-danger" style="font-size: 12px;">Kesalahan jaringan saat memuat ucapan.</div>';
+            });
+        }
+
+        function escapeHtml(text) {
+          if (!text) return "";
+          return text
+            .toString()
+            .replace(/&/g, "&amp;")
+            .replace(/</g, "&lt;")
+            .replace(/>/g, "&gt;")
+            .replace(/"/g, "&quot;")
+            .replace(/'/g, "&#039;");
+        }
+
+        // Toggle buttons and seek music using click delegation
+        document.addEventListener("click", function (e) {
+          var target = e.target;
+          if (!target) return;
+
+          // If target is inside or is the open button
+          var openBtn = target.closest(".btn-open-invitation");
+          if (openBtn || target.classList.contains("btn-open-invitation")) {
+            var music = document.getElementById("music");
+            if (music) {
+              var setTime = function () {
+                try {
+                  music.currentTime = 127;
+                } catch (err) {
+                  console.error("Error setting music currentTime:", err);
+                }
+              };
+              if (music.readyState >= 1) {
+                setTime();
+              } else {
+                music.addEventListener("loadedmetadata", setTime, {
+                  once: true,
+                });
+                music.addEventListener("canplay", setTime, { once: true });
+              }
+            }
+          }
+
+          // Show wishes button click
+          if (target.id === "showWishesBtn") {
+            var container = document.getElementById("wishesListContainer");
+            var showBtn = document.getElementById("showWishesBtn");
+            var hideBtn = document.getElementById("hideWishesBtn");
+            if (container) container.style.display = "block";
+            if (showBtn) showBtn.style.display = "none";
+            if (hideBtn) hideBtn.style.display = "inline-block";
+            fetchWishes();
+          }
+
+          // Hide wishes button click
+          if (target.id === "hideWishesBtn") {
+            var container = document.getElementById("wishesListContainer");
+            var showBtn = document.getElementById("showWishesBtn");
+            var hideBtn = document.getElementById("hideWishesBtn");
+            if (container) container.style.display = "none";
+            if (showBtn) showBtn.style.display = "inline-block";
+            if (hideBtn) hideBtn.style.display = "none";
+          }
+        });
+
+        // Prevent touch/mouse events inside gallery container from propagating to the window.
+        // This stops themesv2.js from changing pages when user scrolls/swipes inside the gallery.
+        var checkGalleryInterval = setInterval(function () {
+          var galleryContainer = document.getElementById(
+            "galleryScrollContainer",
+          );
+          if (galleryContainer) {
+            var stopPropagation = function (e) {
+              e.stopPropagation();
+            };
+            var eventsToStop = [
+              "touchstart",
+              "touchmove",
+              "touchend",
+              "mousedown",
+              "mousemove",
+              "mouseup",
+              "wheel",
+            ];
+            eventsToStop.forEach(function (eventName) {
+              galleryContainer.addEventListener(eventName, stopPropagation, {
+                passive: eventName.includes("touch"),
+              });
+            });
+            clearInterval(checkGalleryInterval);
+          }
+        }, 100);
       })();
     </script>
 
